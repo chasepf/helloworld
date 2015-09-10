@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8"><!--This has something to do with how browsers work-->
+	<link rel="stylesheet" type="text/css" href="/css/css.css"><!--To link to CSS file-->
+	<title>Chasepf | Nano Notes</title><!--This is what appears on browser tab-->
+</head>
+	<body>
+	<div class="header">
+		<h1>Nano Notes</h1>
+	</div>
+			{% include 'table_of_contents.html' ignore missing %}
+			{% block content %}
+			{% endblock %}	
+	</body>
+</html>
+

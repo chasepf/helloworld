@@ -1,0 +1,66 @@
+/*This is a comment in CSS*/
+body {
+	font-family: Cambria;
+	/*background-color: #FEF6EB; I know guys want all the comments/commented code outta 'ere but I don't want to forget that color - I already forgot whre I found it*/
+	background-color: black;
+}
+
+h1 { /* Main header style */
+	text-align: center;
+	font-family: Impact;
+	background:  #C25B56;
+	margin-right: 40%;
+	margin-left: 40%;
+}
+
+h2 {
+	text-align: center;
+	background: #6cc0e5;
+}
+
+h3 {
+	text-align: center;
+	background: #C25B56;
+	margin: 5%;
+}
+
+.table_of_contents {
+	position: relative;
+	float: left;
+	width: 24%;
+	background:  white;
+}
+
+.topics {
+	position: relative;
+	float: right;
+	width: 75%;
+	background: white;
+	margin-bottom: 1%;
+}
+
+.concept {
+	text-align: left;
+}
+
+.concept-title {
+	background: #C25B56;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.concept-description {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.italic {
+	font-style: italic;
+}
+
+
+
+

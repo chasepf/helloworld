@@ -1,0 +1,192 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="topics">
+	<h2>Full Stack: Intro to Networks and Allowing Comments</h2>
+	<div class="concept">
+		<div class="concept-title">
+			Network Vocab and Terminology		
+		</div>
+		<div class="concept-description">
+			<p>
+				Knowing the vocab of new subject helps facilitate learning.  Here are some of them.
+			<p>
+				<b>Network</b>: A group of entities that can communicate with each other even though the entities may not be connected directly.  By definition a network has more than 2 people.  Networks are a 3000 year old idea.  The internet is an example of a network.	
+			</p>
+			<p>
+				<b>Latency</b>: The time it a message to get from source to destination.  Measure din milliseconds.
+			</p>
+			<p>
+				<b>Bandwidth</b>: The amount of information that can be transmitted per unit of time.  Measured in bits per second.
+			</p>
+			<p>
+				<b>Bit</b>: The smallest unit of information.  It decides between two things.  Think 'on' or 'off', 'yes' or 'no', '0' or '1'.
+			</p> 
+			<p>
+				<b>Protocols</b>: A set of rules that people agree to, that tell you how two entities talk to eachother.
+			</p>
+			<p>
+				<b>URL</b>: Uniform Resource Locator
+			</p>
+			<p> 
+				<b>Caching or Cache</b>: Something that stores data so you don't have to retrieve it later.  Can be used to make data requests faster.	
+			</p>	
+		</div>
+	</div>
+	<div class="concept">
+		<div class="concept-title">
+			Making a Network
+		</div>
+		<div class="concept-description">
+			<p>
+				1. A way to encode and interpret messages
+				<ul><li>internet: message > bits > on the wire (electrons/photons)</li></ul>
+			</p>
+			<p>
+				2. A way to route messages
+				<ul><li>internet: routers figure out next hops</li></ul>
+			</p>
+			<p>
+				3. Rules for deciding who gets to use resources
+				<ul><li>internet: more of a wild west, best effort service</li></ul>
+			</p>				
+		</div>
+	</div>
+	<div class="concept">
+		<div class="concept-title">
+			Servers
+		</div>
+		<div class="concept-description">
+			<p>
+				A server is a computer running a server program.  The purpose of a server is to respond to HTTP (a major protocol of the web) requests. There are two types of responses a server will do: STATIC and DYNAMIC.	
+			</p>
+			<p>
+				STATIC responses are made when stactic content (pre-written files such as images) are requested.
+			</p>
+			<p>
+				DYNAMIC responses are made on the fly by programs on the server. These programs are called web applications.  Web Applications live on the server and generate responses based on the request.  
+			</p>
+			<p>
+				Status Codes:
+			<ul>
+				<li>200 = Ok, document found and where it should be</li>
+				<li>300 = Found, but may need to alter request to find the doc</li>
+				<li>400 = Not found, browser error</li>
+				<li>500 = Server Error, something is wrong server side</li>
+			</ul>
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<div class="concept-title">
+			HTTP: HyperText Transfer Protocol
+		</div>
+		<div class="concept-description">
+			<p>
+				HTTP is the protocol for the Client-Server model.  Clients send HTTP requests using a GET or POST method.  A serve will then respond with HTTP Response with the content that was requested
+			</p>
+			<p>
+			   	An example of a GET Request: GET /foo HTTP/1.1
+			</p>
+			<p>
+				An example of a Response would be: HTTP/1.1 200 OK
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<div class="concept-title">
+			Always use User-Agents appropriately!!		
+		</div>
+		<div class="concept-description">
+			<p>
+				This is the mantra to follow.	
+			</p>
+			<p>
+				The user agent tells the server who is trying to make contact.  Good for identifying spammers and hackers.
+			</p>				
+		</div>
+	</div>
+	<div class="concept">
+		<div class="concept-title">
+			GET
+		</div>
+		<div class="concept-description">
+			<p>
+				<ul>
+					<li>Parameters in URL</li>
+					<li>Used fetching documents from a server</li>	
+					<li>Maximum URL length</li>
+					<li>OK to cache</li>
+					<li>This shouldn't change the serva data, only to retrieve data</li>
+				</ul>
+			</p>				
+		</div>
+	</div>
+	<div class="concept">
+		<div class="concept-title">
+			POST
+		</div>
+		<div class="concept-description">
+			<p>
+				<ul>
+					<li>Parameters in the body</li>
+					<li>Used to update data</li>	
+					<li>There isn't a max length</li>
+					<li>Not OK to cache</li>
+					<li>Allowed to change server data</li>
+				</ul>	
+			</p>				
+		</div>
+	</div>
+	<div class="concept">
+		<div class="concept-title">
+			The Importance of Validating Input
+		</div>
+		<div class="concept-description">
+			<p>
+				Validation is verifying on the server side the we receive is what we expected to receive.  This is very important because it controls what information the user is allowed to send to the server.  A server can receive junk and it needs to be smart enough to deal with somebody sending broken data.  It's important to validate parameters otherwise we can receive junk that can harm the server.	
+			</p>
+			<p>
+				It's also important to have the user's experience in mind when validating info.  For example if the users submitted some invalid data through a form we should let them know by displaying an error message so that they can re-submit valid data.  And to also consider times when a blank form is submitted.  
+			</p> 
+		</div>
+	</div>
+	<div class="concept">
+		<div class="concept-title">
+			HTML Templates and Abstraction
+		</div>
+		<div class="concept-description">
+			<p>
+				Templates typically refer to a template library that is used to build complicated strings.  
+			</p>
+			<p>
+				Using templates allows you to keep your code and html seperate but you can access each from one another.
+			</p>
+			<p>
+				The benefits of templates are:
+				<ul>
+					<li>Great way to separate different types of code</li>
+					<li>Makes code more readable</li>
+					<li>More secure websites</li>
+					<li>HTML that is easier to modify</li>
+					<li>Maintaining code editor syntax highlighting</li>
+					<li>Template inheritance</li>
+					<li>Use simple Jinja syntax for repeated HTML elements</li>
+			</p>
+			<p>
+				Avoiding code repetion is a huge part of good programming.  You only want to write code that performs a specific function once.  This makes updating your code way easier.  Also, when humans do repetitive things we increase our chance of making mistakes.  This causes bugs in code.  When code repetition is low, there is less chance for bugs and it makes it easier to find bugs when they do occur.
+			</p>
+		</div>
+	</div>
+	<div class="concept">
+		<div class="concept-title">
+			Databases	
+		</div>
+		<div class="concept-description">
+			<p>
+				A database is a program that can store retrieve large amounts of structured data.  This is how you store all the info you collect from users.	
+			</p>				
+		</div>
+	</div>
+</div>
+{% endblock %}

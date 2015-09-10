@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="topics">
+		<h2>The web and HTML</h2>
+		<div class="concept">
+			<div class="concept-title">
+				What is the web?
+			</div>
+			<div class="concept-description">
+				<p>
+					The web is a giant network of computers that talk to each other using a protocol call HTTP.  A webpage is document written in HTML (HyperTextMarkupLanguage). A web browser is a program that interprets and displays the info.  The main pieces of the web are: users, the net and servers.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				What is coding?			
+			</div>
+			<div class="concept-description">
+				<p>
+					Coding is writing text in a language that a computer can understand.  If you know how to talk to a computer, you can tell it do anything!  <span class="italic">That's pretty neat</span>!!!
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Computers ain't dat bright			
+			</div>
+			<div class="concept-description">
+				<p>
+					Computers are very literal.  They don't intepret the way a human does.  This means one little typo can become a huge problem.  This is an example of 'Technological Empathy'.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Inline vs block		
+			</div>
+			<div class="concept-description">
+				<p>
+					Elements are either inline or block.  Block elements form an invisible box around them. This is useful for diving your page up into sections for styling.
+				</p>
+				<p>
+					Examples of <span class="italic">Inline</span> elements: a, span, br, img and strong.
+				</p>
+				<p>
+					Examples of <span class="italic">Block</span> elements: p, form and div. 
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Thinking like a programmer		
+			</div>
+			<div class="concept-description">
+				<p>
+					There are too many details to remember.  Focus on the big ideas then know what and how to look up.  <span class="italic">Google to the rescue</span>!!!
+				</p>
+				<p>
+					5 different types of thinking:
+					<ol>
+						<li>Procedural - Creating clear and unambiguous instructions for a computer to follow</li>
+						<li>Abstract - Finding similiarity, or generality, amongst seemingly different things (avoiding repetition)</li>
+						<li>Systematic - Breaking a big problem down into smaller pieces (big-picture and decision-making) and how the pieces fit together</li>
+						<li>Technological Empathy - Understanding how a computer works, what it is, and what it's good and bad at doing (understanding tools)</li>	
+						<li>Debugging - Systematic process of identifying the cause of a computer that doesn't work.  If a program doesn't work, there is a mistake.</li>
+					</ol>
+				<p>
+				Here are the steps to fix the problem<br>
+				1.  Collect evidence (what makes the program fail?)<br>
+				2. Generate theories (what caused this?)<br>
+				3. Test theories (if theory is right, how do I find out?<br>
+				4. Fix the problem
+				</p>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				HTML Stuff
+			</div>
+			<div class="concept-description">
+				<p>
+					How an HTML doc is structured<br>
+					&lt;DOCTYPE hmtl&gt;<br>
+					&lt;head&gt;<br>
+					&lt;title&gt;What appears on browser tab&lt;/title&gt;<br>
+					&lt;meta UTF-8&gt;<br>
+					&lt;link rel=&quot;&quot; href=&quot;&quot;/&gt;><br>
+					&lt;/head&gt;
+					&lt;html&gt;<br>
+					&lt;body&gt;<br>
+					&lt;/body&gt;<br>
+					&lt;/html&gt;<br>
+				</p>
+				Other stuff:<br>
+				<br>
+				Tag = &lt;&gt;  &lt;&gt;<br>
+				Element = (&lt;&gt; &quot;&quot; &lt;&gt;)<br>
+				Attribute = property of an HTML element<br>
+				Void tag = no closing tag<br>
+					<ul>
+						<li>example = the &lt;br&gt;</li>
+					</ul>
+				Images don't have a closing tag<br>
+				The internet is the World's largerst network of computers<br>
+				URL = How we reference (address)<br>
+				HTTP = Protocols for transferring data<br>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

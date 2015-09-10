@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="topics">
+		<h2>Adding CSS to HTML</h2>
+		<div class="concept">
+			<div class="concept-title">
+				Avoiding repetition
+			</div>
+			<div class="concept-description">
+				<p>
+					Avoiding mistakes and consistency: <br>
+					<br>	
+					When doing the same thing over and over it becomes easy to make a mistake.  The benefit of CSS is that it allows you make changes to parts of the document with a few lines of code instead of going through and manually applying the style to each individual line.  For example, with this page, by assinging each lesson and header a class, I'm able to set the style with just one bit of code.  I didn't need to set it each time.  Very, very useful.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				What is CSS?
+			</div>
+			<div class="concept-description">
+				<p>
+					CSS stands for cascading style sheets.  It is the code that applies the look to the HTML structure.  It cascades throughout the whole document.  Meaning it not only applies to element's that directly match, but element's children as well.  This is inheritance.  If there are multiple rules for a child, the most specific wins.  You link to the CSS file in the head of the html doc.  Put the CSS file and HTML file in the same folder.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Boxes, boxes, and boxes
+			</div>
+			<div class="concept-description">
+				<p>
+					Earlier I mentioned to see everything as boxes in HTML.  This is not only helpful in developing structure but it makes it easier to style.  There are 4 components to the boxes: Margin, border, padding and conent.
+				</p>
+				<p>
+					Because there are four components, sizing can be different.  Also, browser display content differently.  This will be important in the future.
+				</p>
+				<p>
+					Display: flex; allows divs to appear next to each other instead of stacked.  Will use this to build a TOC (table of contents)
+					that appears next to the conent.  How do I make it stay static while content moves to make navigation easier?
+				</p>
+				<p>
+					Two techniques: 
+					<ol>
+						<li>use percents instead of pixels</li>
+						<li>boxsizing: border-box</li>
+					</ol>
+				<p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Code, test, refine
+			</div>
+			<div class="concept-description">
+				<p>
+					The strategy:
+				</p>
+				<ol>
+					<li>Look for natural boxes</li>
+					<li>Look for repeated styles and semantic elements</li>
+					<li>Write HTML</li>
+					<li>Apply style (biggest to smallest)</li>
+					<li>Fix things</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

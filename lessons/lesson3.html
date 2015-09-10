@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="topics">
+		<h2>Object Oriented Programming</h2>
+		<div class="concept">
+			<div class="concept-title">
+				What is Object Oriented Programming?
+			</div>
+			<div class="concept-description">
+				<p>
+					OOP is a programming language model organized around objects rather than “actions” and data rather than logic.  It is a design philosophy.  This just means describing what things <em>are</em> and what they can <em>do</em>.  It is considered more 'new school' vs the 'old school' procedural programming.  
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Why is OOP good for thinking about big projects?
+			</div>
+			<div class="concept-description">
+				<p>
+					OOP is good for thinking about large projects because of the way it is structured around identifying and using objects.  This will help you have a cleaner, more organized project that can be modified easier than if you used a procedural language. 
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				What are the advantages of OOP for large programming projects?
+			</div>
+			<div class="concept-description">
+				<p>
+					The advantage of OOP for large projects is that you can easily modify your code.  Instead of having to write a whole new procedure if you want to tweak something you can just just change something in the class. 
+				</p>
+				<p>
+					Another advantage is faster development because you're able to reuse code that is already written from the library.
+				</p>
+				<p>
+					Since I imagine writing a large program would be hard, approaching it with an OOP mindset would force you to spend more time on design which would result in a better program. 
+				</p> 
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Vocab.. yes, yes?
+			</div>
+			<div class="concept-description">
+				<p>
+					Class - Think of this as a a blueprint, a detailed description that defines what an object will be (behavior and attributes).  Once defined, we can create multiple objects from it (ex. multiple houses from the same blueprint.)
+				</p>
+				<p>
+					Object and instance - Structures that contain both data and procedures (the things built from blueprints).
+				</p>
+				<p>
+					Method - A function which is a member of a class.
+				</p>
+				<p>
+					Library - This is what comes with when you install it.  The library has a bunch of modules (code that has already been written) which you can import into your own code and make things much faster.
+				</p>
+				<p>
+					Class variables - Attributes shared by all instances of the class.
+				</p>
+				<p>
+					Inheritance - The idea that a sub class class will get most or all of its features from a parent class (like how you inherit traits from your mom and dad).  This is great form of code re-use.  You can create a new class and instead of writing it from scratch, we can base it on an existing class.
+				</p>
+				<p>
+					Method overriding - sometimes you want the child to behave differently so you override the function in the child, replacing the functionality.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Making abstract connections
+			</div>
+			<div class="concept-description">
+				<p>
+					OOP is like using classes in HTML and CSS when making webpages.  Instead of using inline CSS to style the page, we categorise the HTML elements on the webpage using CSS classes which specify the design properties to be applied on them.  Since classes and CSS classes both act as blueprints it helps to avoid repetition.
+				</p>
+			</div>
+		</div>
+{% endblock %}

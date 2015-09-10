@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="topics">
+		<h2>Guestbook</h2>
+			<h4>Feel free to leave a comment below.</h4>
+			<form action="/guestbook?guestbook_name={{ guestbook_name }}" method="post">
+				<div>
+					<textarea name="content" style="width:95%" required></textarea>
+					<div>{{ error_mesg }}</div>
+				</div>
+				<div>	
+				<button>Submit Your Comment</button>
+				<a href="{{ url|safe }}">{{ url_linktext }}</a>
+			</form>			
+			{% for greeting in greetings %}
+				<div>
+				<div>
+				{% if greeting.author %}
+					<b>{{ greeting.author.email }}
+						{% if user and user.user_id() == greeting.author.identity %}
+							(You)
+						{% endif %}
+        			</b> wrote on {{ greeting.date.strftime('%d-%m-%Y') }}:
+				{% else %}
+					An anonymous person wrote on {{ greeting.date.strftime('%d-%m-%Y') }}:
+				{% endif %}
+				<blockquote>{{ greeting.content }}</blockquote>
+				</div>
+				</div>
+			{% endfor %}
+	</div>
+	</div>
+{% endblock %}
