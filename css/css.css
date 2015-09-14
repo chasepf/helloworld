@@ -56,10 +56,12 @@ h3 {
 .concept-description {
 	margin-right: 15px;
 	margin-left: 15px;
+	max-width: 50%;
 }
 .italic {
 	font-style: italic;
 }
+
 
 
 

@@ -2,6 +2,7 @@
 {% block content %}
 	<div class="topics">
 		<h2>Guestbook</h2>
+		<div class="concept-description">
 			<h4>Feel free to leave a comment below.</h4>
 			<form action="/guestbook?guestbook_name={{ guestbook_name }}" method="post">
 				<div>
@@ -14,7 +15,6 @@
 			</form>			
 			{% for greeting in greetings %}
 				<div>
-				<div>
 				{% if greeting.author %}
 					<b>{{ greeting.author.email }}
 						{% if user and user.user_id() == greeting.author.identity %}
@@ -26,8 +26,7 @@
 				{% endif %}
 				<blockquote>{{ greeting.content }}</blockquote>
 				</div>
-				</div>
 			{% endfor %}
-	</div>
+		</div>
 	</div>
 {% endblock %}

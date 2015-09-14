@@ -83,13 +83,16 @@
 		</div>
 		<div class="concept-description">
 			<p>
-				HTTP is the protocol for the Client-Server model.  Clients send HTTP requests using a GET or POST method.  A serve will then respond with HTTP Response with the content that was requested
+				HTTP is the protocol for the Client-Server model.  Clients send HTTP requests using a GET or POST method.  A server will then respond with HTTP Response with the content that was requested.
 			</p>
 			<p>
 			   	An example of a GET Request: GET /foo HTTP/1.1
 			</p>
 			<p>
 				An example of a Response would be: HTTP/1.1 200 OK
+			</p>
+			<p>
+				<img src="/image/servers.png" title="Servers" alt="Servers"> image from <a href="http://ruslanspivak.com/lsbaws-part1/" target="_blank">http://ruslanspivak.com/lsbaws-part1/</a>
 			</p>
 		</div>
 	</div>
@@ -147,7 +150,7 @@
 				Validation is verifying on the server side the we receive is what we expected to receive.  This is very important because it controls what information the user is allowed to send to the server.  A server can receive junk and it needs to be smart enough to deal with somebody sending broken data.  It's important to validate parameters otherwise we can receive junk that can harm the server.	
 			</p>
 			<p>
-				It's also important to have the user's experience in mind when validating info.  For example if the users submitted some invalid data through a form we should let them know by displaying an error message so that they can re-submit valid data.  And to also consider times when a blank form is submitted.  
+				It's also important to have the user's experience in mind when validating info.  For example if the users submitted some invalid data through a form (like a typo) we should let them know by displaying an error message so that they can re-submit valid data before it is stored on the database.  And to also consider times when a blank form is submitted.  
 			</p> 
 		</div>
 	</div>
@@ -172,10 +175,14 @@
 					<li>Maintaining code editor syntax highlighting</li>
 					<li>Template inheritance</li>
 					<li>Use simple Jinja syntax for repeated HTML elements</li>
+				</ul>
 			</p>
 			<p>
 				Avoiding code repetion is a huge part of good programming.  You only want to write code that performs a specific function once.  This makes updating your code way easier.  Also, when humans do repetitive things we increase our chance of making mistakes.  This causes bugs in code.  When code repetition is low, there is less chance for bugs and it makes it easier to find bugs when they do occur.
 			</p>
+			<p>
+				Jinja's allows for code inheritance between html templates. Jinja's built-in loops and decision branching elements help to reduce repetitive code. You can use Jinja loops to wrap various elements in highly repetitive elements like the html div tag structure. For example, Jinja can be applied to wrap the course note lessons and concepts into the highly repeating div tag structure. Then course note elements can be inserted into the Jinja code by using string substitution on the Jinja code with the variable element. This supports easy changes to your layout and reduces the amount of lines of code, which means fewer lines of code to look through when searching for bugs.
+			</p> 
 		</div>
 	</div>
 	<div class="concept">
