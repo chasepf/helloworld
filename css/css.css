@@ -1,7 +1,7 @@
 /*This is a comment in CSS*/
 body {
 	font-family: Cambria;
-	/*background-color: #FEF6EB; I know guys want all the comments/commented code outta 'ere but I don't want to forget that color - I already forgot whre I found it*/
+	/*background-color: #FEF6EB; */
 	background-color: black;
 }
 
@@ -56,7 +56,7 @@ h3 {
 .concept-description {
 	margin-right: 15px;
 	margin-left: 15px;
-	max-width: 50%;
+	max-width: 100%;
 }
 .italic {
 	font-style: italic;
